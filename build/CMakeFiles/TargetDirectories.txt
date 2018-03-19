@@ -1,0 +1,3 @@
+/Users/clemenshabedank/desktop/MPC/build/CMakeFiles/rebuild_cache.dir
+/Users/clemenshabedank/desktop/MPC/build/CMakeFiles/edit_cache.dir
+/Users/clemenshabedank/desktop/MPC/build/CMakeFiles/mpc.dir
