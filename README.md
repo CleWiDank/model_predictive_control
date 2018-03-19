@@ -33,7 +33,7 @@ from stopping. Furthermore, there is a penalty for not desired actuator behavior
 steering angles and strong variations within the steering angles are penalized because
 those could lead to unsafe behavior and comprising comfort.
 
-# Timestep Length and Elapsed Duration (N and dt)
+### Timestep Length and Elapsed Duration (N and dt)
 The considered future horizon is defined by choosing the number and the time intervals
 of waypoints of the trajectory. I chose the number of time intervals to N=10 and the time
 interval to t=0.1s so the future path is predicted in 10 waypoints every 100ms. Thus, one
@@ -55,7 +55,7 @@ the combination N = 20 and t = 0.05) lead to instable behavior. The optimum appe
 be at N = 10 and t = 0.01 although a tuning of other parameters could imaginably shift
 this optimum.
 
-# Polynomial Fitting and MPC Preprocessing
+### Polynomial Fitting and MPC Preprocessing
 The incoming data from the simulator include the x and y positions of the waypoints. A
 third order polynomial is fitted through them because it reflects real world curvature
 quite well. In order to simplify calculations, I have applied some preprocessing. In this
@@ -66,7 +66,7 @@ trigonometry. The transformed state vector with px=0, py=0 and psi=0 is used for
 visualization. You can see a screenshot below. A yellow line displays the desired
 trajectory while the green line shows the solver’s solution of the waypoints.
 
-# Model Predictive Control with Latency
+### Model Predictive Control with Latency
 In order to do the calculations necessary for model predictive control, there is always
 latency. Realistic values are at about 100ms, which I used in this project. To account for
 latency the control must look at the steering and acceleration output of the solver
