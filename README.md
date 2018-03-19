@@ -8,7 +8,7 @@ tuning the parameters for the timestep length and the elapsed duration. Then, I 
 want to address the polynomial fitting and MPC preprocessing I applied. Finally, the
 approach for considering latency will be argued.
 
-## The model:
+### The model:
 The model used in this project is an optimizer that minimizes a defined cost function
 and returns control inputs (steering / acceleration / braking). The cost function
 evaluates the deviation of the desired trajectory to a predicted trajectory, which is
