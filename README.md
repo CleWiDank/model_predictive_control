@@ -73,3 +73,5 @@ latency the control must look at the steering and acceleration output of the sol
 100ms ago instead of the current one. Since the timestep t is set to 100ms as well, the
 implementation is quite simple. The actuations (steering angle and acceleration) take
 the actuation from the preceding timestep for the current one.
+
+Comment: To run the code you need to add the Eigen-library to src.
