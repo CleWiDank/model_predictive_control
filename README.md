@@ -78,11 +78,9 @@ implementation is quite simple. The actuations (steering angle and acceleration)
 the actuation from the preceding timestep for the current one.
 
 Comment: To run the code you need to add the Eigen-library to src.
-
+---
 
 ## Setting up the Enviroment:
-
----
 
 ## Dependencies
 
